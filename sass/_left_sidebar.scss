@@ -58,10 +58,11 @@
                 @media screen and (max-width: $bg-tablet) {
                         display: flex;
                         flex-wrap: wrap;
+                        
                 }
                 li{
                     display: flex;
-                    
+                    padding: 0 1rem;
                     align-items: center;
                     margin-top: 1rem;
                     .heading__4 {

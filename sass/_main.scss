@@ -30,6 +30,10 @@
             background-position: center;
             padding: 0.5rem;
         }
+        @media screen and (max-width: $bg-small) {
+            background-image: none;
+            
+        }
         
 
     }
@@ -69,7 +73,7 @@
         display: grid;
         grid-template-columns: repeat(3 , minmax(20rem, 1fr));
         @media screen and (max-width: $bg-medium) {
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
             
         }
         // grid-template-rows: 30rem;
@@ -191,7 +195,7 @@
         // width: ;
         // margin-top: 2rem;
         border-radius: 2rem;
-        height: 120%;
+        height: 110%;
          background-image: linear-gradient(to bottom , rgba($color-primary, 0.3)  , rgba($color-primary, 0.3) ),  url(/img/naruto.png);
          background-position: center;
          background-size: cover;
@@ -199,9 +203,13 @@
         grid-column: 2/3;
         @media screen and (max-width: $bg-small) {
             grid-column: 1/ 4;
+
         }
     }
     &__info {
+        @media screen and (max-width: $bg-small) {
+            align-self: center;
+        }
         &-description {
             padding: 1rem 0;
         }

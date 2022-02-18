@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/all.css"> -->
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
     <title>GamePro</title>
 </head>
 
@@ -336,7 +338,7 @@
 
                 </li>
                 <li>
-                    <i class="fas fa-phone">(+233) 2477687310</i>
+                    <i class="fas fa-phone"></i>(+233) 2477687310
 
                 </li>
             </ul>
@@ -368,13 +370,13 @@
         </div>
         <div class="footer__item">
             <h1 class="heading__1-2">
-                Other Products
+                Other Games
             </h1>
             <ul class="">
-                <li> <a href="#"> Accounting Software</a> </li>
-                <li> <a href="#"> Billing Software</a> </li>
-                <li> <a href="#">Booking System</a> </li>
-                <li> <a href="#">Tracking System</a> </li>
+                <li> <a href="#"> Naruto Shippuden: War Arc </a> </li>
+                <li> <a href="#"> Tokyo Ghoul </a> </li>
+                <li> <a href="#">Kimetsu no Yaiba</a> </li>
+                <li> <a href="#">Boku no Hero</a> </li>
 
             </ul>
         </div>
@@ -386,15 +388,12 @@
 
 <script defer>
     let button = document.getElementById("toggle-btn");
-    // let hideTags = document.getElementsByClassName("toggle")
     let navactions = document.getElementById("nav-actions")
     let hideTags = document.querySelectorAll(".toggle")
     let icon = document.querySelector("#toggle-btn i")
-    // console.log(icon)
-    // console.log(hideTags)
+
     button.addEventListener("click", function (e) {
-        // navactions.style.display = "none"
-        // e.target.classList.toggle="fas fa-times"
+
         if (icon.classList.contains("fa-bars")) {
             icon.classList.remove("fa-bars")
             icon.classList.add("fa-times")
@@ -403,19 +402,16 @@
             icon.classList.remove("fa-times")
             icon.classList.add("fa-bars")
         }
-        // if(e.target.class)
-        console.log(hideTags[0].style.display)
         for (let i = 0; i < hideTags.length; i++) {
             if (hideTags[i].style.display && hideTags[i].style.display != "none") {
                 hideTags[i].style.display = "none"
 
 
                 console.log("not equal to none")
-                // e.target.className = "fas fa-times"
-                // console.log("hide")
+
             } else {
                 hideTags[i].style.display = "flex"
-                // e.target.className = "fas fa-times"  
+
             }
         }
     })
