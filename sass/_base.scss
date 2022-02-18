@@ -1,0 +1,64 @@
+$color-primary: #091022;
+$color-primary-light: #101C32;
+$color-hero : #6224AF;
+
+$color-secondary: #FCBD03;
+$color-danger: #C82B26;
+
+$font-color-white: #E2EAEC;
+$font-color-light: #8C90A2 ;
+$font-color-dark: #4F576C;
+
+$font-primary:'Helvetica Neue', Helvetica, Arial, sans-serif;
+// $font-primary: 'Consolas' , sans-serif;
+
+$bg-desktop : 65em;
+$bg-tablet : 56.5em;
+$bg-medium : 48em;
+$bg-small : 36em;
+// @mixin desktop {
+//     @media screen and (max-width: ) {
+        
+//     }
+// }
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%; //1rem === 10px
+    @media screen and (max-width: $bg-desktop) {
+        font-size: 50%;
+    }
+}
+body {
+    font-family: $font-primary;
+    // color: $font-color-white;
+    line-height: 1.6;
+    background-color: $color-primary;
+    color: $font-color-white;
+}
+li {
+    list-style: none;
+    a {
+        text-decoration: none;
+        color: $font-color-dark;
+        &:hover{
+            color: $font-color-white;
+        }
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: [left-sidebar-start]1fr[left-sidebar-end main-start]  4fr[main-end] max-content;
+    // @media screen and (max-width: $bg-) 
+    grid-template-rows: max-content max-content;
+    row-gap: 5rem;
+    column-gap: 4rem;
+    @media screen and (max-width: $bg-medium) {
+        column-gap: 1rem;
+    }
+    // margin-bottom: 1rem;
+}

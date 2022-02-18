@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <title>GamePro</title>
+</head>
+
+<body class="container">
+    <nav class="navbar">
+        <h1>
+            <span class="heading__1-1">Game</span><span class="heading__1-2">Pro.</span>
+        </h1>
+        <button class="d-none" id="toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar__links-container toggle">
+            <li> <a href="#"><i class="fas fa-home"></i> Home</a> </li>
+            <li> <a href="#"><i class="fas fa-gamepad"></i> Games</a> </li>
+            <li> <a href="#"><i class="far fa-star"></i> Tournaments</a> </li>
+            <li> <a href="#"><i class="far fa-calendar"></i> Calender</a> </li>
+            <li> <a href="#"><i class="far fa-comment"></i> Forum</a> </li>
+        </ul>
+        <div class="navbar__search-container toggle">
+            <input class="navbar__search-input" placeholder="Search..." type="search">
+        </div>
+        <ul class="navbar__profile-container toggle">
+            <li class="bell"><i class="fas fa-bell"></i></li>
+            <li>
+                <img src="img/gojo.jpg" alt="" class="avatar-sm">
+            </li>
+            <li><i class="fas fa-angle-down"></i></li>
+        </ul>
+        <ul class="navbar__actions-container" id="nav-actions">
+            <li><i class="fas fa-window-minimize"></i></li>
+            <li><i class="far fa-window-maximize"></i></li>
+            <li><i class="fas fa-times"></i></li>
+        </ul>
+    </nav>
+    <aside class="left_sidebar">
+        <section>
+            <div class="left_sidebar__img">
+                <img class="img" src="img/jumpforce.jpg" alt="jumpforce">
+                <div class="avatar-md left_sidebar__avatar">
+                    <img src="img/gojo.jpg" alt="Gojo" srcset="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="social-icons">
+                <img src="img/facebook.png" alt="facebook">
+                <img src="img/twitter.png" alt="twitter">
+                <img src="img/instagram.png" alt="instagram">
+                <img src="img/youtube.png" alt="youtube">
+            </div>
+            <div class="stats">
+                <div>
+                    <h4 class="heading__3">57</h4>
+                    <div>Points</div>
+                </div>
+                <div>
+                    <h4 class="heading__3">35</h4>
+                    <div>Followers</div>
+                </div>
+                <div>
+                    <h4 class="heading__3">45</h4>
+                    <div>Following</div>
+                </div>
+            </div>
+            <div class="profile-buttons">
+                <button class="btn btn-secondary">Message</button>
+                <button class="btn btn-transparent">Follow</button>
+            </div>
+            <div class="about">
+                <h4 class="heading__3">About</h4>
+                <div class="about__content heading__4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate vitae facere delectus dolore
+                    itaque, quam similique non blanditiis temporibus cum optio commodi dolores magnam, quos error sint!
+                    Voluptates, a beatae.
+                </div>
+                <hr>
+            </div>
+            <div class="friends">
+                <h4 class="heading__3">Friends</h4>
+                <ul>
+                    <li>
+                        <img src="/img/animoji1.png" alt="" class="avatar-sm">
+                        <h4 class="heading__4">Adam Smith</h4>
+                    </li>
+                    <li>
+                        <img src="/img/animoji2.png" alt="" class="avatar-sm">
+                        <h4 class="heading__4">Micheal Stone</h4>
+                    </li>
+                    <li>
+                        <img src="/img/animoji3.png" alt="" class="avatar-sm">
+                        <h4 class="heading__4">James Crick</h4>
+                    </li>
+                    <li>
+                        <img src="/img/animoji1.png" alt="" class="avatar-sm">
+                        <h4 class="heading__4">Watson Smith</h4>
+                    </li>
+                    <li>
+                        <img src="/img/animoji2.png" alt="" class="avatar-sm">
+                        <h4 class="heading__4">Marie Nelson</h4>
+                    </li>
+                    <li class="load-more">
+                        <span class="load-more-icon-container"><i class="fas fa-angle-down"></i></span>
+                        <span><a class="heading__4" href="#">Load More <i class="fas fa-angle-right"></i></a></span>
+
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+        </section>
+    </aside>
+    <main class="main">
+        <!-- <div>
+            <img src="/img/banner.jpg" alt="banner" class="main__banner">
+        </div> -->
+        <section>
+            <!-- <div>
+
+            </div> -->
+            <div class="main__character">
+                <!-- <img src="/img/naruto.jpg" alt="main-character" > -->
+            </div>
+            <div class="main__info">
+                <div class="live info__live"> <i class="far fa-gem"></i> Live</div>
+                <div class="main__info-description">
+                    <h3 class="heading__3">Save the world from obito/madara</h3>
+                </div>
+                <div class="main__info-source">
+                    <img src="/img/gojo.jpg" class="avatar-sm" alt="gojo">
+                    <h4 class="heading__4">Jumpforce</4>
+                </div>
+                <div class="main__info-buttons">
+                    <button class="btn btn-transparent">Watch</button>
+                    <button class="btn btn-primary">Play Now</button>
+                </div>
+            </div>
+            <div class="main__screenshots">
+                <div class="main__screenshots-container">
+
+                    <div class="main__screenshots-item">
+                        <img src="/img/jumpforce.jpg" alt="jump force">
+                    </div>
+                    <div class="main__screenshots-item">
+                        <img src="/img/jumpforce.jpg" alt="jump force">
+                    </div>
+                    <div class="main__screenshots-item">
+                        <img src="/img/jumpforce.jpg" alt="jump force">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <ul class="navbutton__list">
+                <li>
+                    <button class="btn btn-primary">Highlights</button>
+                </li>
+                <li>
+                    <button class="btn btn-primary">Live channels</button>
+                </li>
+                <li>
+                    <button class="btn btn-primary">communities</button>
+                </li>
+                <li>
+                    <button class="btn btn-primary">Highlights</button>
+                </li>
+                <li class="grow"></li>
+                <li><button class="btn btn-primary btn-popular">Popular<i class="fas fa-angle-down"></i></button></li>
+            </ul>
+
+        </section>
+        <section>
+            <div class="card">
+                <div class="card__header">
+                    <div class="card__img avatar-md">
+                        <img src="img/gojo.jpg" alt="card__img">
+                    </div>
+                    <div>
+                        <div class="live info__live"> <i class="far fa-gem"></i> Live</div>
+                        <h3 class="heading__3">Max45ABQ</h3>
+                        <h4 class="heading__4">Fifa2021</h4>
+                    </div>
+                </div>
+                <div class="card__media">
+                    <img src="/img/jumpforce.jpg" alt="game">
+                    <div class="card__media-watching">20 watching</div>
+                    <div class="card__media-play">
+                        <button><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__header">
+                    <div class="card__img avatar-md">
+                        <img src="img/animoji1.png" alt="card__img">
+                    </div>
+                    <div>
+                        <div class="live info__live"> <i class="far fa-gem"></i> Live</div>
+                        <h3 class="heading__3">Max45ABQ</h3>
+                        <h4 class="heading__4">Fifa2021</h4>
+                    </div>
+                </div>
+                <div class="card__media">
+                    <img src="/img/jumpforce.jpg" alt="game">
+                    <div class="card__media-watching">20 watching</div>
+                    <div class="card__media-play">
+                        <button><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__header">
+                    <div class="card__img avatar-md">
+                        <img src="img/animoji3.png" alt="card__img">
+                    </div>
+                    <div>
+                        <div class="live info__live"> <i class="far fa-gem"></i> Live</div>
+                        <h3 class="heading__3">Max45ABQ</h3>
+                        <h4 class="heading__4">Fifa2021</h4>
+                    </div>
+                </div>
+                <div class="card__media">
+                    <img src="/img/jumpforce.jpg" alt="game">
+                    <div class="card__media-watching">20 watching</div>
+                    <div class="card__media-play">
+                        <button><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__header">
+                    <div class="card__img avatar-md">
+                        <img src="img/animoji2.png" alt="card__img">
+                    </div>
+                    <div>
+                        <div class="live info__live"> <i class="far fa-gem"></i> Live</div>
+                        <h3 class="heading__3">Max45ABQ</h3>
+                        <h4 class="heading__4">Fifa2021</h4>
+                    </div>
+                </div>
+                <div class="card__media">
+                    <img src="/img/jumpforce.jpg" alt="game">
+                    <div class="card__media-watching">20 watching</div>
+                    <div class="card__media-play">
+                        <button><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__header">
+                    <div class="card__img avatar-md">
+                        <img src="img/animoji1.png" alt="card__img">
+                    </div>
+                    <div>
+                        <div class="live info__live"> <i class="far fa-gem"></i> Live</div>
+                        <h3 class="heading__3">Max45ABQ</h3>
+                        <h4 class="heading__4">Fifa2021</h4>
+                    </div>
+                </div>
+                <div class="card__media">
+                    <img src="/img/jumpforce.jpg" alt="game">
+                    <div class="card__media-watching">20 watching</div>
+                    <div class="card__media-play">
+                        <button><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__header">
+                    <div class="card__img avatar-md">
+                        <img src="img/animoji3.png" alt="card__img">
+                    </div>
+                    <div>
+                        <div class="live info__live"> <i class="far fa-gem"></i> Live</div>
+                        <h3 class="heading__3">Max45ABQ</h3>
+                        <h4 class="heading__4">Fifa2021</h4>
+                    </div>
+                </div>
+                <div class="card__media">
+                    <img src="/img/jumpforce.jpg" alt="game">
+                    <div class="card__media-watching">20 watching</div>
+                    <div class="card__media-play">
+                        <button><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside class="right_sidebar">
+        <h3 class="heading__3">Friends </h3>
+        <h3 class="heading__3">Online</h3>
+        <div class="right_sidebar__add_friend">
+            <button><i class="fas fa-plus"></i></button>
+        </div>
+        <ul class="right_sidebar__friends_online">
+            <li class="right_sidebar__friend">
+                <div class="img">
+                    <img src="img/gojo.jpg" alt="">
+                </div>
+            </li>
+            <li class="right_sidebar__friend">
+                <div class="img">
+                    <img src="img/animoji3.png" alt="">
+                </div>
+            </li>
+            <li class="right_sidebar__friend">
+                <div class="img">
+                    <img src="img/animoji1.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </aside>
+    <footer class="footer">
+        <div class="footer__item">
+            <h1>
+                <span class="heading__1-1">Game</span><span class="heading__1-2">Pro.</span>
+            </h1>
+            <ul>
+                <li>
+                    <a href="#">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dinonumy eirmod tempor invidunt
+                    </a>
+
+                </li>
+                <li>
+                    <i class="fas fa-phone">(+233) 2477687310</i>
+
+                </li>
+            </ul>
+
+        </div>
+        <div class="footer__item">
+            <h1 class="heading__1-2">
+                Navigation
+            </h1>
+            <ul class="">
+                <li> <a href="#"> Home</a> </li>
+                <li> <a href="#"> Games</a> </li>
+                <li> <a href="#">Tournaments</a> </li>
+                <li> <a href="#">Calender</a> </li>
+                <li> <a href="#"></i> Forum</a> </li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <h1 class="heading__1-2">
+                Features
+            </h1>
+            <ul class="">
+                <li> <a href="#"> How it works</a> </li>
+                <li> <a href="#"> Privacy policy</a> </li>
+                <li> <a href="#">Terms of service</a> </li>
+                <li> <a href="#">Refund policy</a> </li>
+                <li> <a href="#"></i> Forum</a> </li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <h1 class="heading__1-2">
+                Other Products
+            </h1>
+            <ul class="">
+                <li> <a href="#"> Accounting Software</a> </li>
+                <li> <a href="#"> Billing Software</a> </li>
+                <li> <a href="#">Booking System</a> </li>
+                <li> <a href="#">Tracking System</a> </li>
+
+            </ul>
+        </div>
+        <div class="footer__copyright">Copyright 2022 DevAhmed, All rights reserved!</div>
+    </footer>
+
+
+</body>
+
+<script defer>
+    let button = document.getElementById("toggle-btn");
+    // let hideTags = document.getElementsByClassName("toggle")
+    let navactions = document.getElementById("nav-actions")
+    let hideTags = document.querySelectorAll(".toggle")
+    let icon = document.querySelector("#toggle-btn i")
+    // console.log(icon)
+    // console.log(hideTags)
+    button.addEventListener("click", function (e) {
+        // navactions.style.display = "none"
+        // e.target.classList.toggle="fas fa-times"
+        if (icon.classList.contains("fa-bars")) {
+            icon.classList.remove("fa-bars")
+            icon.classList.add("fa-times")
+
+        } else {
+            icon.classList.remove("fa-times")
+            icon.classList.add("fa-bars")
+        }
+        // if(e.target.class)
+        console.log(hideTags[0].style.display)
+        for (let i = 0; i < hideTags.length; i++) {
+            if (hideTags[i].style.display && hideTags[i].style.display != "none") {
+                hideTags[i].style.display = "none"
+
+
+                console.log("not equal to none")
+                // e.target.className = "fas fa-times"
+                // console.log("hide")
+            } else {
+                hideTags[i].style.display = "flex"
+                // e.target.className = "fas fa-times"  
+            }
+        }
+    })
+</script>
+
+</html>

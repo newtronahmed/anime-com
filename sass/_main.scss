@@ -1,0 +1,232 @@
+.main {
+    @media screen and (max-width: $bg-tablet) {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        padding: 0 1rem;
+    }
+    @media screen and (max-width: $bg-small) {
+        grid-column:1/4 ;
+        grid-row: 4/5;
+    }
+    section:not(:first-child) {
+        margin-top: 6rem;
+    }
+    section:nth-child(1){
+        display: grid;
+        grid-template-columns: 2rem 1fr 1fr 1fr;
+        column-gap: 3rem;
+        height: 50vh;
+        border-radius: 2rem;
+        color: $font-color-white;
+        
+        padding-top: 3rem;
+        // grid-template-rows: repeat(4 , 5rem);
+        background-image: linear-gradient(to right ,$color-secondary 30%, transparent 100%),  url(/img/jumpforce-yellow.jpg);
+        @media screen and (max-width: $bg-medium) {
+            height: 80vh;
+            column-gap: 1rem;
+        }
+        @media screen and (max-width: $bg-tablet) {
+            background-position: center;
+            padding: 0.5rem;
+        }
+        
+
+    }
+    section:nth-child(2){
+        display: flex;
+        // display: grid;
+        // grid-template-columns: 4fr minmax(2rem,1fr) min-content;
+        // justify-content: space-between;
+        .navbutton__list {
+            display: flex;
+            width: 100%;
+            @media screen and (max-width: $bg-medium) {
+                flex-wrap: wrap;
+            }
+            // @media screen and (max-width: $bg-medium) {
+            //     flex-direction: column;
+            // }
+            
+            li {
+                margin:0 1rem;
+                width: 100%;
+                // flex: 1;
+                button {
+                    width: 100%;
+                    &:hover{
+                        background-color: $color-secondary;
+                        color: $color-primary;
+                    }
+                }
+            }
+            li.grow {
+                flex-grow: 1;
+            }
+        }
+    }
+    section:nth-child(3){
+        display: grid;
+        grid-template-columns: repeat(3 , minmax(20rem, 1fr));
+        @media screen and (max-width: $bg-medium) {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            
+        }
+        // grid-template-rows: 30rem;
+        row-gap: 1.5rem;
+        column-gap: 2rem;
+        .card {
+            background-color: $color-primary-light;
+            // box-shadow: 1px 1px 1px rgba($color-primary, 0.2);
+            border: none;
+            border-radius: 1rem;
+            height: 100%;
+            &__header {
+                padding: 1rem;
+                display: flex;
+                height: 9rem;
+                align-items: center;
+                div:nth-child(2){
+                    margin-left: 1rem;
+                }
+            }
+            &__media {
+                position: relative;
+                // height: 100%;
+                height: 20rem;
+                
+                img{
+                    // width: 100%;
+                    // height: 100%;
+                    width: 100%;
+                    // object-fit: cover;
+                    height: 100%;
+                    border-radius: 0rem 0rem 1rem 1rem;
+                }
+                &-watching {
+                    background-color: rgba($font-color-light,0.7);
+                    display: inline-block;
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.5rem;
+                    position: absolute;
+                    top:1rem;
+                    left:1rem;
+                }
+                &-play{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    button {
+                        padding: 1rem 1.5rem;
+                        background-color: rgba($font-color-light , 0.5);
+                        text-align: center;
+                        border-radius: 100%;
+                        border: none;
+                        color:$font-color-white;
+                    }
+                }
+            }
+        }
+    }
+    &__screenshots{
+        height: 100%;
+        display: flex;
+        @media screen and (max-width: $bg-small) {
+            display: none;
+        }
+        align-items: flex-end;
+        margin: 0 1rem;
+        // position: relative;
+        &-container{
+            display: flex;
+            align-items: center;
+            position: relative;
+            &::after{
+                content: '>';
+            display: block;
+            // font-size: 1.9rem;
+            text-align: center;
+
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 100%;
+            position: absolute;
+            background-color:lighten($color: $color-secondary, $amount: 2);
+            box-shadow: 1px 1px 2px rgba( $color-secondary , 1);
+            top:50%;
+            right: 0;
+            z-index: 20;
+            transform: translate(50%, -50%);
+            }
+            &::before{
+                content: '<';
+            display: block;
+            // font-size: 1.9rem;
+            text-align: center;
+
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 100%;
+            position: absolute;
+            background-color:lighten($color: $color-secondary, $amount: 2);
+            box-shadow: 1px 1px 2px rgba( $color-secondary , 1);
+            top:50%;
+            left: 1rem;
+            z-index: 20;
+            transform: translate(-50%, -50%);
+            }
+        }
+        &-item {
+            flex-basis: 1;
+            margin-left: 1rem;
+            img{
+                width: 100%;
+                border-radius: 0.85rem;
+            }
+        }
+    }
+     &__character {
+        //  grid-row: 1 / 5;
+        // width: ;
+        // margin-top: 2rem;
+        border-radius: 2rem;
+        height: 120%;
+         background-image: linear-gradient(to bottom , rgba($color-primary, 0.3)  , rgba($color-primary, 0.3) ),  url(/img/naruto.png);
+         background-position: center;
+         background-size: cover;
+        z-index: 20;
+        grid-column: 2/3;
+        @media screen and (max-width: $bg-small) {
+            grid-column: 1/ 4;
+        }
+    }
+    &__info {
+        &-description {
+            padding: 1rem 0;
+        }
+        &-source {
+            display: flex;
+            align-items: center;
+            padding:1rem 0;
+        }
+        &-buttons{
+            padding: 1rem 0;
+        }
+    }
+
+    .live {
+        display: inline-block;
+        border-radius: 0.5rem;
+        padding: 0.25rem 1rem;
+        background-color: $color-danger;
+    }
+    .avatar-sm{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+        margin-right: 1rem;
+    }
+    
+    
+}

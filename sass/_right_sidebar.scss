@@ -1,0 +1,88 @@
+.right_sidebar {
+    padding: 1.5rem;
+    // background-color: lighten($color: $color-primary, $amount: 4);
+    background-color: $color-primary-light;
+    box-shadow: 1px 1px 1px rgba($color-primary, 0.2);
+    border-radius: 1rem;
+    @media screen and (max-width: $bg-tablet) {
+        grid-column: 3 / 4 ;
+        grid-row: 2 / 3;
+    }
+    @media screen and (max-width: $bg-small) {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        // display: flex;
+        .heading__3 {
+            text-align: center;
+        }
+        margin: 0 1rem;
+    }
+    &__friends_online {
+        display: flex;
+        flex-direction: column;
+
+        // align-items: cen;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: $bg-small) {
+         
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    &__friend{
+        margin-top: 2rem;
+        .img {
+            width:6rem;
+        height: 6rem;
+        border-radius: 100%;
+        // border: 0.3rem solid;
+        padding: 0.2rem;
+        // padding: 0.5rem;
+        position: relative;
+        // display: inline-block;
+        background-image: linear-gradient(to right , $font-color-light, $font-color-dark);
+        // background-image: linear-gradient(120deg , $color-secondary 70% , transparent 70%);
+        // transform: rotate(-30deg);
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 100%;
+            position: absolute;
+            background-color:lighten($color: $color-secondary, $amount: 2);
+            box-shadow: 1px 1px 2px rgba( $color-secondary , 1);
+            top:0;
+            right: 0;
+            z-index: 20;
+            transform: translate(-50%);
+        }
+        }
+        img{
+            width: 100%;
+            // width:5rem;
+            height: 100%;
+            border-radius: 100%;
+        }
+    }
+
+
+    &__add_friend {
+        display: flex;
+        justify-content: center;
+        padding-top: 1.5rem;
+        button{
+            // margin: 1rem auto;
+            border:none;
+            border-radius: 100%;
+            background-color: $color-secondary;
+            // padding: 3rem;
+            cursor: pointer;
+            height: 4rem;
+            width: 4rem;
+            color: $font-color-white;
+            font-size: 2rem;
+        }
+    }
+}

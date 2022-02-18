@@ -1,0 +1,28 @@
+%heading {
+    font-family: $font-primary;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    // line-height: 
+}
+.heading__1{
+    @extend %heading;
+    font-size: 1.9rem;
+    &-1 {
+        color: $color-secondary;
+    }
+    &-2{
+        color: $font-color-white;
+    }
+}
+
+.heading__3 {
+    @extend %heading;
+    color: $font-color-white;
+    font-size: 1.6rem;
+    // font-weight: 400;
+}
+.heading__4 {
+    @extend %heading;
+    color: $font-color-white;
+    font-size: 1.4rem;
+}
